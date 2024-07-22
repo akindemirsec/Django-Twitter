@@ -6,6 +6,8 @@ A Twitter-like web application built with Django for the backend and React for t
 
 # Screenshots
 ![image](https://github.com/user-attachments/assets/09b2ddc2-6d1f-4a9d-bcab-52d38bc803ba)
+![image](https://github.com/user-attachments/assets/28920ab0-49de-4366-a153-26223303d3c7)
+
 
 
 ## Features
