@@ -4,6 +4,8 @@ A Twitter-like web application built with Django for the backend and React for t
 
 ## Features![logo](https://github.com/user-attachments/assets/3732f176-9514-4586-8931-4ea5113dcc23)
 
+#
+
 
 - User authentication (register, login, logout)
 - Post tweets
