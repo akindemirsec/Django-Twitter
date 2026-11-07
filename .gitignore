@@ -1,0 +1,45 @@
+# Python environments and caches
+.venv/
+venv/
+env/
+djangotwitter/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# JavaScript dependencies and generated output
+node_modules/
+/build/
+**/build/
+dist/
+coverage/
+.npm/
+*.log
+
+# Local configuration, databases, and user uploads
+.env
+.env.*
+!.env.example
+*.sqlite3
+*.sqlite3-*
+*.db
+/twitter_clone/media/
+/twitter_clone/staticfiles/
+
+# IDE, operating system, and temporary files
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+*.bak
+bin/
+obj/

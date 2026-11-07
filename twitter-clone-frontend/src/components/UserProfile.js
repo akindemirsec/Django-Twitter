@@ -102,7 +102,7 @@ const UserProfile = () => {
 
   return (
     <ProfileContainer>
-      <ProfileImage src={userProfile.profile.profile_image.startsWith('http') ? userProfile.profile.profile_image : `http://127.0.0.1:8000${userProfile.profile.profile_image}`} alt="Profile" />
+      <ProfileImage src={userProfile.profile.profile_image ? (userProfile.profile.profile_image.startsWith('http') ? userProfile.profile.profile_image : `http://127.0.0.1:8000${userProfile.profile.profile_image}`) : '/images/logo.png'} alt="Profile" />
       <Username>{userProfile.username}</Username>
       <Bio>{userProfile.profile.bio}</Bio>
       <FollowButton isFollowing={isFollowing} onClick={handleFollowToggle}>

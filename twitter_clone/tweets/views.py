@@ -20,7 +20,7 @@ class RegisterView(generics.CreateAPIView):
             defaults={
                 'bio': profile_data.get('bio', ''),
                 'location': profile_data.get('location', ''),
-                'birth_date': profile_data.get('birth_date', None),
+                'birth_date': profile_data.get('birth_date') or None,
                 'profile_image': profile_data.get('profile_image', None)
             }
         )

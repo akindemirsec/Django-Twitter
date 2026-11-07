@@ -6,13 +6,10 @@ WORKDIR /app
 
 # Install dependencies
 COPY package*.json ./
-RUN npm install
+RUN npm ci
 
 # Copy project files
 COPY . .
-
-# Build the React app
-RUN npm run build
 
 # Expose port 3000
 EXPOSE 3000

@@ -73,7 +73,7 @@ const Notifications = () => {
         <NotificationContainer key={notification.id}>
           <NotificationHeader>
             <ProfileImage
-              src={notification.sender_profile_image.startsWith('http') ? notification.sender_profile_image : `http://127.0.0.1:8000${notification.sender_profile_image}`}
+              src={notification.sender_profile_image ? (notification.sender_profile_image.startsWith('http') ? notification.sender_profile_image : `http://127.0.0.1:8000${notification.sender_profile_image}`) : '/images/logo.png'}
               alt="Profile"
             />
             <UserName>{notification.sender_username}</UserName>
