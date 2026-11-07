@@ -47,7 +47,6 @@ const UserInfo = () => {
       }
     })
     .then(response => {
-      console.log('User info fetched:', response.data);
       setUser(response.data);
     })
     .catch(error => {
@@ -57,7 +56,9 @@ const UserInfo = () => {
 
   if (!user) return null;
 
-  const profileImageUrl = user.profile.profile_image.startsWith('http')
+  const profileImageUrl = !user.profile.profile_image
+    ? '/images/logo.png'
+    : user.profile.profile_image.startsWith('http')
     ? user.profile.profile_image
     : `http://127.0.0.1:8000${user.profile.profile_image}`;
 

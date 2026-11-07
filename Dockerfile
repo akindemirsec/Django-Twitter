@@ -1,5 +1,5 @@
 # Backend Dockerfile
-FROM python:3.9-slim
+FROM python:3.11-slim
 
 # Set work directory
 WORKDIR /app
@@ -10,9 +10,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy project files
 COPY twitter_clone /app/
-
-# Collect static files
-RUN python manage.py collectstatic --noinput
 
 # Expose port 8000 and start the server
 EXPOSE 8000

@@ -136,7 +136,7 @@ const TweetList = () => {
           <TweetContainer key={tweet.id}>
             <TweetHeader>
               <ProfileImage
-                src={tweet.profile_image.startsWith('http') ? tweet.profile_image : `http://127.0.0.1:8000${tweet.profile_image}`}
+                src={tweet.profile_image ? (tweet.profile_image.startsWith('http') ? tweet.profile_image : `http://127.0.0.1:8000${tweet.profile_image}`) : '/images/logo.png'}
                 alt="Profile"
                 onClick={() => navigate(`/profile/${tweet.user}`)}
               />

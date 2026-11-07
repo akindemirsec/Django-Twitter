@@ -113,7 +113,7 @@ const TweetForm = ({ onTweetPosted }) => {
       {profileImage ? (
         <Avatar src={profileImage.startsWith('http') ? profileImage : `http://127.0.0.1:8000${profileImage}`} alt="Profile" />
       ) : (
-        <Avatar src="/default-avatar.png" alt="Default Profile" /> // Provide a default avatar image
+        <Avatar src="/images/logo.png" alt="Default Profile" />
       )}
       <TextareaContainer>
         <Textarea

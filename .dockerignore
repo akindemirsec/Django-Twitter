@@ -1,0 +1,11 @@
+.git
+djangotwitter
+.venv
+**/__pycache__
+**/*.pyc
+.env
+.env.*
+twitter-clone-frontend
+**/db.sqlite3
+**/media
+**/staticfiles
